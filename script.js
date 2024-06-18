@@ -1,4 +1,10 @@
+const testTextField = document.querySelector('#testTextField');
+
+let clickCounter = 0;
+
+
 document.querySelector('#testTextField').addEventListener('click',
     function() {
-        this.textContent = 'По мне кликнули!';
+        clickCounter = clickCounter + 1;
+        this.textContent = 'По мне кликнули ' + clickCounter +' раз!';
 })
